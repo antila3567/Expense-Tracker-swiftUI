@@ -1,2 +1,2 @@
-SwiftUI + swiftData app for tracking expenses
+ app for tracking expenses --> SwiftUI + swiftData + widgets
 
