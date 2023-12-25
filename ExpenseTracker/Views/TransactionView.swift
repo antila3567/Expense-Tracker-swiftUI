@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct TransactionView: View {
     @Environment(\.modelContext) private var context
@@ -168,6 +169,8 @@ struct TransactionView: View {
             context.insert(transaction)
         }
         dismiss()
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     var numberFormatter: NumberFormatter {

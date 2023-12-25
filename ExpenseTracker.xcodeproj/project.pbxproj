@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DD614F892B39821B006913FD /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614F882B39821B006913FD /* Chart.swift */; };
+		DD614F912B3993FC006913FD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD614F902B3993FC006913FD /* WidgetKit.framework */; };
+		DD614F932B3993FC006913FD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD614F922B3993FC006913FD /* SwiftUI.framework */; };
+		DD614F962B3993FC006913FD /* StatsCardViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614F952B3993FC006913FD /* StatsCardViewBundle.swift */; };
+		DD614F982B3993FC006913FD /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD614F972B3993FC006913FD /* StatsCardView.swift */; };
+		DD614F9A2B3993FD006913FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD614F992B3993FD006913FD /* Assets.xcassets */; };
+		DD614F9E2B3993FD006913FD /* StatsCardViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD614F8E2B3993FC006913FD /* StatsCardViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD614FA32B3994FD006913FD /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37CB02B387AF7005083EB /* FilterTransactionsView.swift */; };
+		DD614FA42B399523006913FD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C792B36EC52005083EB /* Date+Extensions.swift */; };
+		DD614FA52B39952C006913FD /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C772B36E50C005083EB /* View+Extensions.swift */; };
+		DD614FA62B399577006913FD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C7C2B36EE9C005083EB /* CardView.swift */; };
+		DD614FA72B3995B3006913FD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C682B36E152005083EB /* Category.swift */; };
+		DD614FA82B3995CB006913FD /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C6A2B36E186005083EB /* Transactions.swift */; };
+		DD614FA92B3995FB006913FD /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C6C2B36E20A005083EB /* TintColor.swift */; };
+		DD614FAA2B399607006913FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C622B36D9FD005083EB /* Constants.swift */; };
 		DDC37C4F2B36D76C005083EB /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C4E2B36D76C005083EB /* ExpenseTrackerApp.swift */; };
 		DDC37C512B36D76C005083EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37C502B36D76C005083EB /* ContentView.swift */; };
 		DDC37C532B36D76D005083EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC37C522B36D76D005083EB /* Assets.xcassets */; };
@@ -34,8 +48,41 @@
 		DDC37CB12B387AF7005083EB /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC37CB02B387AF7005083EB /* FilterTransactionsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DD614F9C2B3993FD006913FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC37C432B36D76C005083EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD614F8D2B3993FC006913FD;
+			remoteInfo = StatsCardViewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD614FA22B3993FD006913FD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD614F9E2B3993FD006913FD /* StatsCardViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DD614F882B39821B006913FD /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		DD614F8E2B3993FC006913FD /* StatsCardViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsCardViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD614F902B3993FC006913FD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DD614F922B3993FC006913FD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DD614F952B3993FC006913FD /* StatsCardViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardViewBundle.swift; sourceTree = "<group>"; };
+		DD614F972B3993FC006913FD /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		DD614F992B3993FD006913FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD614F9B2B3993FD006913FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD614FAB2B39963C006913FD /* ExpenseTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenseTracker.entitlements; sourceTree = "<group>"; };
+		DD614FAC2B3996A6006913FD /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
 		DDC37C4B2B36D76C005083EB /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC37C4E2B36D76C005083EB /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		DDC37C502B36D76C005083EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +111,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD614F8B2B3993FC006913FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD614F932B3993FC006913FD /* SwiftUI.framework in Frameworks */,
+				DD614F912B3993FC006913FD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC37C482B36D76C005083EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,10 +130,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD614F8F2B3993FC006913FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD614F902B3993FC006913FD /* WidgetKit.framework */,
+				DD614F922B3993FC006913FD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD614F942B3993FC006913FD /* StatsCardView */ = {
+			isa = PBXGroup;
+			children = (
+				DD614F952B3993FC006913FD /* StatsCardViewBundle.swift */,
+				DD614F972B3993FC006913FD /* StatsCardView.swift */,
+				DD614F992B3993FD006913FD /* Assets.xcassets */,
+				DD614F9B2B3993FD006913FD /* Info.plist */,
+			);
+			path = StatsCardView;
+			sourceTree = "<group>";
+		};
 		DDC37C422B36D76C005083EB = {
 			isa = PBXGroup;
 			children = (
+				DD614FAC2B3996A6006913FD /* StatsCardViewExtension.entitlements */,
 				DDC37C4D2B36D76C005083EB /* ExpenseTracker */,
+				DD614F942B3993FC006913FD /* StatsCardView */,
+				DD614F8F2B3993FC006913FD /* Frameworks */,
 				DDC37C4C2B36D76C005083EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC37C4B2B36D76C005083EB /* ExpenseTracker.app */,
+				DD614F8E2B3993FC006913FD /* StatsCardViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +173,7 @@
 		DDC37C4D2B36D76C005083EB /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DD614FAB2B39963C006913FD /* ExpenseTracker.entitlements */,
 				DDC37C612B36D9EE005083EB /* Helpers */,
 				DDC37C5E2B36D896005083EB /* Models */,
 				DDC37C5D2B36D891005083EB /* Views */,
@@ -173,6 +254,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DD614F8D2B3993FC006913FD /* StatsCardViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD614F9F2B3993FD006913FD /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */;
+			buildPhases = (
+				DD614F8A2B3993FC006913FD /* Sources */,
+				DD614F8B2B3993FC006913FD /* Frameworks */,
+				DD614F8C2B3993FC006913FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatsCardViewExtension;
+			productName = StatsCardViewExtension;
+			productReference = DD614F8E2B3993FC006913FD /* StatsCardViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DDC37C4A2B36D76C005083EB /* ExpenseTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC37C592B36D76D005083EB /* Build configuration list for PBXNativeTarget "ExpenseTracker" */;
@@ -180,10 +278,12 @@
 				DDC37C472B36D76C005083EB /* Sources */,
 				DDC37C482B36D76C005083EB /* Frameworks */,
 				DDC37C492B36D76C005083EB /* Resources */,
+				DD614FA22B3993FD006913FD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD614F9D2B3993FD006913FD /* PBXTargetDependency */,
 			);
 			name = ExpenseTracker;
 			productName = ExpenseTracker;
@@ -200,6 +300,9 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					DD614F8D2B3993FC006913FD = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					DDC37C4A2B36D76C005083EB = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -219,11 +322,20 @@
 			projectRoot = "";
 			targets = (
 				DDC37C4A2B36D76C005083EB /* ExpenseTracker */,
+				DD614F8D2B3993FC006913FD /* StatsCardViewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DD614F8C2B3993FC006913FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD614F9A2B3993FD006913FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC37C492B36D76C005083EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +348,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD614F8A2B3993FC006913FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD614FA32B3994FD006913FD /* FilterTransactionsView.swift in Sources */,
+				DD614FA42B399523006913FD /* Date+Extensions.swift in Sources */,
+				DD614F982B3993FC006913FD /* StatsCardView.swift in Sources */,
+				DD614FA52B39952C006913FD /* View+Extensions.swift in Sources */,
+				DD614FA62B399577006913FD /* CardView.swift in Sources */,
+				DD614FAA2B399607006913FD /* Constants.swift in Sources */,
+				DD614F962B3993FC006913FD /* StatsCardViewBundle.swift in Sources */,
+				DD614FA82B3995CB006913FD /* Transactions.swift in Sources */,
+				DD614FA92B3995FB006913FD /* TintColor.swift in Sources */,
+				DD614FA72B3995B3006913FD /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC37C472B36D76C005083EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,7 +397,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DD614F9D2B3993FD006913FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD614F8D2B3993FC006913FD /* StatsCardViewExtension */;
+			targetProxy = DD614F9C2B3993FD006913FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DD614FA02B3993FD006913FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YD26RK344;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracker.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD614FA12B3993FD006913FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatsCardViewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YD26RK344;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StatsCardView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StatsCardView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExpenseTracker.StatsCardView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DDC37C572B36D76D005083EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,11 +584,14 @@
 		DDC37C5A2B36D76D005083EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/ExpenseTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YD26RK344;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Expense Tracker";
@@ -421,11 +617,14 @@
 		DDC37C5B2B36D76D005083EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/ExpenseTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YD26RK344;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Expense Tracker";
@@ -451,6 +650,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD614F9F2B3993FD006913FD /* Build configuration list for PBXNativeTarget "StatsCardViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD614FA02B3993FD006913FD /* Debug */,
+				DD614FA12B3993FD006913FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDC37C462B36D76C005083EB /* Build configuration list for PBXProject "ExpenseTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
