@@ -40,5 +40,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    RootView {
+        ContentView()
+    }
 }

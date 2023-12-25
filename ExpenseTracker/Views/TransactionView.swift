@@ -156,6 +156,7 @@ struct TransactionView: View {
             editTransactions?.amount = amount
             editTransactions?.category = category.rawValue
             editTransactions?.dateAdded = dateAdded
+            Toast.shared.present(title: "Note Changed", symbol: "scribble")
         } else {
             let transaction = Transaction(
                 title: title,
@@ -167,6 +168,7 @@ struct TransactionView: View {
             )
             
             context.insert(transaction)
+            Toast.shared.present(title: "Note Created", symbol: "plus")
         }
         dismiss()
         

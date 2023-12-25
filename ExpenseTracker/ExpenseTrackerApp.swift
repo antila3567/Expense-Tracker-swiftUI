@@ -12,10 +12,12 @@ import WidgetKit
 struct ExpenseTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
-                    WidgetCenter.shared.reloadAllTimelines()
-                }
+            RootView {
+                ContentView()
+                    .onAppear {
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }
+            }
         }
         .modelContainer(for: [Transaction.self])
     }

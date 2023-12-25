@@ -57,6 +57,8 @@ struct TransactionCardView: View {
         } actions: {
             Action(tint: .red, icon: "trash") {
                 context.delete(transaction)
+                Toast.shared.present(title: "Note Deleted", symbol: "trash")
+                
             }
         }
     }
