@@ -40,4 +40,16 @@ extension View {
         
         return formatter.string(from: .init(value: value)) ?? ""
     }
+    
+    var currencySymbol: String {
+        let locale = Locale.current
+        
+        return locale.currencySymbol ?? ""
+    }
+    
+    func total(_ transaction: [Transaction], category: Category) -> Double {
+        return transaction.filter({$0.category == category.rawValue}).reduce(Double.zero) { partialResult, transaction in
+            return partialResult + transaction.amount
+        }
+    }
 }

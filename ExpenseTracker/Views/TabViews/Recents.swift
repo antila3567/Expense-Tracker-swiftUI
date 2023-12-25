@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct Recents: View {
     
@@ -35,14 +36,22 @@ struct Recents: View {
                             })
                             .hSpacing(.leading)
                             
-                            CardView(income: 1989, expenses: 876)
+                            FilterTransactionsView(startDate: startDate, endDate: endDate, content: { transactions in
+                                CardView(
+                                    income: total(transactions, category: .income),
+                                    expenses: total(transactions, category: .expenses)
+                                )
+                                
+                                CustomSegmentControl()
+                                    .padding(.bottom, 10)
+                                
+                                ForEach(transactions.filter({$0.category == selectedCategory.rawValue})) { transaction in
+                                    NavigationLink(value: transaction) {
+                                        TransactionCardView(transaction: transaction)
+                                    }
+                                }
+                            })
                             
-                            CustomSegmentControl()
-                                .padding(.bottom, 10)
-                            
-                            ForEach(sampleTransactions.filter({$0.category == selectedCategory.rawValue})) { transaction in
-                                TransactionCardView(transaction: transaction)
-                            }
                         } header: {
                             HeaderView(size)
                         }
@@ -52,6 +61,9 @@ struct Recents: View {
                 .background(.gray.opacity(0.15))
                 .blur(radius: showFilterView ? 8 : 0)
                 .disabled(showFilterView)
+                .navigationDestination(for: Transaction.self) { transaction in
+                    TransactionView(editTransactions: transaction)
+                }
             }
             .overlay {
                 if showFilterView {
@@ -92,7 +104,7 @@ struct Recents: View {
             Spacer(minLength: 0)
             
             NavigationLink {
-                
+                TransactionView()
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)

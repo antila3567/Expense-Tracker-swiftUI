@@ -20,6 +20,7 @@ struct CardView: View {
                 HStack(spacing: 12) {
                     Text("\(currencyString(income - expenses))")
                         .font(.title.bold())
+                        .foregroundStyle(Color.primary)
                     
                     Image(systemName: expenses > income ? "chart.line.downtrend.xyaxis" : "chart.line.uptrend.xyaxis")
                         .font(.title3)
@@ -49,7 +50,7 @@ struct CardView: View {
                                 Text(currencyString(category == .income ? income : expenses, allowedDigits: 0))
                                     .font(.callout)
                                     .fontWeight(.semibold)
-                                    .foregroundStyle(.primary)
+                                    .foregroundStyle(Color.primary)
                             }
                             
                             if category == .income {
