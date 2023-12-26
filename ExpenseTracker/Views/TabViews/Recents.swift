@@ -8,8 +8,8 @@
 import SwiftUI
 import SwiftData
 
+
 struct Recents: View {
-    
     @AppStorage("userName") private var userName: String = ""
     
     @State private var startDate: Date = .now.startOfMonth
@@ -45,9 +45,22 @@ struct Recents: View {
                                 CustomSegmentControl()
                                     .padding(.bottom, 10)
                                 
-                                ForEach(transactions.filter({$0.category == selectedCategory.rawValue})) { transaction in
-                                    NavigationLink(value: transaction) {
-                                        TransactionCardView(transaction: transaction)
+                                if transactions.isEmpty {
+                                    Text("Create your first note")
+                                        .font(.title2)
+                                        .fontWeight(.bold)
+                                        .shimmer(
+                                            .init(
+                                                tint: .primary,
+                                                highlight: .gray,
+                                                blur: 2
+                                            )
+                                        )
+                                } else {
+                                    ForEach(transactions.filter({$0.category == selectedCategory.rawValue})) { transaction in
+                                        NavigationLink(value: transaction) {
+                                            TransactionCardView(transaction: transaction)
+                                        }
                                     }
                                 }
                             })
@@ -89,7 +102,14 @@ struct Recents: View {
             VStack(alignment: .leading, spacing: 5, content: {
                 Text("Welcome")
                     .font(.title.bold())
-                
+                    .shimmer(
+                        .init(
+                            tint: .primary,
+                            highlight: .gray,
+                            blur: 2
+                        )
+                    )
+
                 if !userName.isEmpty {
                     Text(userName)
                         .font(.callout)

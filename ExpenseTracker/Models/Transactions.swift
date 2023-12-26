@@ -41,3 +41,7 @@ class Transaction {
         return Category.allCases.first(where: {category == $0.rawValue})
     }
 }
+
+var mockTransactions: Transaction {
+    Transaction.init(title: "Magic Mouse", remarks: "Apple Product", amount: 189.0, dateAdded: .now, category: .expenses, tintColor: .init(color: "Red", value: .red))
+}
