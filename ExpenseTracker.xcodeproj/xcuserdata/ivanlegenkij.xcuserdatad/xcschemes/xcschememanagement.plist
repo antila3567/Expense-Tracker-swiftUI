@@ -7,12 +7,25 @@
 		<key>ExpenseTracker.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>StatsCardViewExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DD614F8D2B3993FC006913FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDC37C4A2B36D76C005083EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

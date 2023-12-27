@@ -170,9 +170,12 @@ struct TransactionView: View {
             context.insert(transaction)
             Toast.shared.present(title: "Note Created", symbol: "plus")
         }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+
         dismiss()
-        
-        WidgetCenter.shared.reloadAllTimelines()
     }
     
     var numberFormatter: NumberFormatter {

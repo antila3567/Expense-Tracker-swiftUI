@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct TransactionCardView: View {
     @Environment(\.modelContext) private var context
@@ -58,7 +59,7 @@ struct TransactionCardView: View {
             Action(tint: .red, icon: "trash") {
                 context.delete(transaction)
                 Toast.shared.present(title: "Note Deleted", symbol: "trash")
-                
+                WidgetCenter.shared.reloadAllTimelines()
             }
         }
     }
