@@ -11,7 +11,6 @@ struct Settings: View {
     @AppStorage("userName") private var userName: String = ""
     @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppInBg") private var lockWhenAppInBg: Bool = false
-    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     
     @State private var changeTheme: Bool = false
     
@@ -40,7 +39,7 @@ struct Settings: View {
             }
             .navigationTitle("Settings")
         }
-        .preferredColorScheme(userTheme.colorScheme)
+
         .sheet(isPresented: $changeTheme, content: {
             ThemeSwitcherView(scheme: scheme)
                 .presentationDetents([.height(410)])

@@ -11,6 +11,7 @@ struct ContentView: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppInBg") private var lockWhenAppInBg: Bool = false
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     
     @State private var activeTab: Tab = .resents
     
@@ -35,6 +36,7 @@ struct ContentView: View {
                 IntroScreen()
                     .interactiveDismissDisabled()
             })
+            .preferredColorScheme(userTheme.colorScheme)
         })
     }
 }
